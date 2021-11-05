@@ -629,16 +629,17 @@ width: 27px;
 
 .content__inner {
     display: grid;
-    grid-template-columns: 5fr 1fr ;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 20px;
     grid-template-areas: "block ads";
 }
 
 .content__block {
     grid-area: block;
-    border: 1px solid #000
+    border: 1px solid #000;
 }
 
 .content__ads {
     grid-area: ads;
-    border: 1px solid #000
+    border: 1px solid #000;
 }
