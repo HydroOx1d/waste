@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+html, body {
+    width: 100%;
+    height: 100%;
+}
 :root {
     --main-color: #429755;
 }
@@ -613,4 +617,28 @@ width: 27px;
 .mm-listitem__btn:hover, .mm-listitem__text:hover {
     color: rgba(0,0,0,.7) !important;
     background: #bcf0bb !important;
+}
+
+
+
+/*CONTENT*/
+
+.content {
+    margin-top: 100px;
+}
+
+.content__inner {
+    display: grid;
+    grid-template-columns: 5fr 1fr ;
+    grid-template-areas: "block ads";
+}
+
+.content__block {
+    grid-area: block;
+    border: 1px solid #000
+}
+
+.content__ads {
+    grid-area: ads;
+    border: 1px solid #000
 }
