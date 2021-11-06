@@ -14,7 +14,7 @@
 <body id="body">
 
 
-<header class="header">
+<header class="header nofixed-header">
   <div class="container">
     <div class="header-menu">
       <div class="logo-block"></div>
@@ -34,11 +34,65 @@
   </div>
 </header>
 
+<div class="searchbar-wrapper hide">
+  <div class="searchbar">
+    <input type="text" class="searchbar-input" placeholder="Поиск по сайту" />
+    <button class="searchbar-btn">Найти</button>
+  </div>
+</div>
+<div class="fixed-subnav nofixed-subnav ">
+  <div class="container">
+    <nav class="subnav">
+      <ul class="mddh content__mddh">
+        <li>
+          <div class="dropdown content__dropdown">
+            <button class="btn dropdown-toggle lang" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+              UA
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 38px);" data-popper-placement="bottom-start">
+              <li><a class="dropdown-item" href="#">RU</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="li-item">Мероприятия</a></li>
+        <li><a href="#" class="li-item">Издания</a></li>
+        <li><a href="#" class="li-item">Статьи</a></li>
+        <li><a href="#" id="subnov-pn" class="li-item">Законодательство</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="crumbs">
+  <div class="container">
+    <div class="crumbs__inner">
+      <span class="crumbs__home"><i class="fa fa-home"></i></span>
+    </div>
+  </div>
+</div>
+
+<section class="content">
+  <div class="container">
+    <div class="content__inner">
+      <div class="content__block">Контентная часть</div>
+      <div class="content__ads">Рекламная часть</div>
+    </div>
+  </div>
+</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="js/mmenu.js"></script>
 <script src="js/waste.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.js"></script>
-
+<script type="text/javascript">
+  $(".header-menu .search-btn").on("click", function () {
+    $(".searchbar-wrapper").toggleClass("hide");
+    $(".header-menu .search-btn img").attr("src", function (index, attr) {
+      return attr != "img/close.png" ? "img/close.png" : "img/icon3.png";
+    });
+  });
+</script>
 </body>
 </html>
