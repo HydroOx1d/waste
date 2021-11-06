@@ -620,7 +620,7 @@ width: 27px;
 /*CONTENT*/
 
 .content {
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .content__mddh{
@@ -645,6 +645,6 @@ width: 27px;
 }
 .nofixed-subnav,
 .nofixed-header{
-    position: absolute!important;
+    position: static!important;
     z-index: 1!important;
 }
