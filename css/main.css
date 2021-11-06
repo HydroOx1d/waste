@@ -624,9 +624,13 @@ width: 27px;
 /*CONTENT*/
 
 .content {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
+.content__mddh{
+    padding-left: 0px!important;
+    justify-content: space-around!important;
+}
 .content__inner {
     display: grid;
     grid-template-columns: 5fr 1fr;
