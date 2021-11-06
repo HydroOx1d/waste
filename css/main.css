@@ -4,10 +4,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-html, body {
-    width: 100%;
-    height: 100%;
-}
 :root {
     --main-color: #429755;
 }
@@ -646,4 +642,9 @@ width: 27px;
 .content__ads {
     grid-area: ads;
     border: 1px solid #000;
+}
+.nofixed-subnav,
+.nofixed-header{
+    position: absolute!important;
+    z-index: 1!important;
 }
