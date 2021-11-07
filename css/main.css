@@ -636,12 +636,11 @@ width: 27px;
 
 .content__block {
     grid-area: block;
-    border: 1px solid #000;
 }
 
 .content__ads {
     grid-area: ads;
-    border: 1px solid #000;
+    background-color: gray;
 }
 .nofixed-subnav,
 .nofixed-header{
@@ -652,6 +651,7 @@ width: 27px;
 .crumbs__inner{
     display: flex;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .crumbs__home{
@@ -663,10 +663,48 @@ width: 27px;
 
 .crumbs__link a{
     text-decoration: none;
-    font-family: Montserrat, sans-serif;
+    font-size: 18px;
     font-weight: 500;
 }
 .crumbs__home i{
     font-size: 25px;
     color: rgba(2, 80, 198, 0.87);
+}
+
+.page-title{
+    font-size: 22px;
+    margin: 10px 0 40px 20px;
+}
+
+.content__form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content__form--input input{
+    width: 300px;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid rgba(0,0,0, .2);
+}
+
+.content__form--select {
+    background-color: transparent;
+    padding-left: 10px;
+    border: 1px solid rgba(0,0,0, .2);
+}
+
+.content__form--input__long{
+    width: 710px!important;
+    margin-top: 20px;
+}
+
+
+.content__form--btn input{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0, .2);
 }
