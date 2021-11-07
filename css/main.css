@@ -648,3 +648,25 @@ width: 27px;
     position: static!important;
     z-index: 1!important;
 }
+
+.crumbs__inner{
+    display: flex;
+    align-items: center;
+}
+
+.crumbs__home{
+    margin: 0 0 0 5px!important;
+}
+.crumbs__icon{
+    margin:0 15px 0 5px;
+}
+
+.crumbs__link a{
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+.crumbs__home i{
+    font-size: 25px;
+    color: rgba(2, 80, 198, 0.87);
+}
