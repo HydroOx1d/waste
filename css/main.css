@@ -636,18 +636,96 @@ width: 27px;
 
 .content__block {
     grid-area: block;
-    border: 1px solid #000;
 }
 
 .content__ads {
     grid-area: ads;
-    border: 1px solid #000;
+    background-color: gray;
 }
 .nofixed-subnav,
 .nofixed-header{
     position: static!important;
     z-index: 1!important;
 }
+
+.crumbs__inner{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.crumbs__home{
+    margin: 0 0 0 5px!important;
+}
+.crumbs__icon{
+    margin:0 15px 0 5px;
+}
+
+.crumbs__link a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.crumbs__home i{
+    font-size: 25px;
+    color: rgba(2, 80, 198, 0.87);
+}
+
+.page-title{
+    font-size: 22px;
+    margin: 10px 0 40px 5px;
+}
+
+.content__form{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content__form--input input{
+    width: 300px;
+    padding-left: 10px;
+    height: 40px;
+    border: 3px solid rgba(0,0,0, .2);
+}
+
+.content__form--select {
+    background-color: transparent;
+    padding-left: 10px;
+    border: 3px solid rgba(0,0,0, .2);
+}
+
+.content__form--input__long{
+    width: 710px!important;
+    margin-top: 20px;
+}
+
+
+.content__form--btn button{
+    margin-top: 20px;
+    height: 40px;
+    width: 210px;
+    background-color: transparent;
+    border: 2.5px solid rgba(0,0,0, .2);
+    padding-right: 20px;
+    color: rgba(0,0,0, .5);
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content__form--btn button i {
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+.content__show {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
 
 /* Визитки*/
 .cards {
