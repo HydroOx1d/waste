@@ -718,3 +718,10 @@ width: 27px;
     padding-left: 20px;
     font-size: 22px;
 }
+
+.content__show {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}

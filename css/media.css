@@ -47,6 +47,9 @@
     .content__form--input__long{
         max-width: 100% !important;
     }
+    .content__form--btn{
+        margin: 0 auto;
+    }
     .content__form--btn input{
         width: 145px;
     }
@@ -446,6 +449,10 @@
 }
 /* -----Mobile----- */
 @media (max-width: 767px) {
+    .content__mddh{
+        padding-left: 0px!important;
+        justify-content: space-between!important;
+    }
     .subnav .mddh .dropdown  li a{
         border: 0;
     }
@@ -693,14 +700,40 @@
     }
 }
 @media (max-width: 520px) {
+    .content__show{
+        display: block;
+        font-size: 18px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    .content__show span {
+        margin-right: 15px;
+    }
+    .page-title{
+        margin: 10px 0 40px 0;
+        font-size: 18px;
+    }
+    .crumbs__inner{
+        margin: 20px 0;
+    }
+    .crumbs__link a{
+        font-size: 16px;
+    }
     .content__ads{
         display: none;
     }
     .content__inner{
         grid-template-columns: 1fr 0;
+        grid-template-areas: "block block";
+    }
+    .content__form{
+        display: none;
+    }
+    .show-from {
+        display: flex;
     }
     .content__form--input{
-        width: 200px;
+        width: 220px;
     }
     .mt-20 {
         margin-top: 20px;
@@ -710,7 +743,7 @@
         font-size: 12px;
     }
     .content__form--select{
-        width: 200px;
+        width: 220px;
     }
     .content__form--input__long{
         max-width: 100% !important;
@@ -778,7 +811,38 @@ a.active + ul {
 /* body > div.active {
     display: block;
 } */
-
+@media screen and (max-width: 438px) {
+    .content__ads{
+        display: none;
+    }
+    .content__inner{
+        grid-template-columns: 1fr 0;
+        grid-template-areas: "block block";
+    }
+    .content__form--input{
+        width: 160px;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .content__form--input input{
+        max-width: 100%;
+        font-size: 12px;
+    }
+    .content__form--select{
+        width: 160px;
+    }
+    .content__form--input__long{
+        max-width: 100% !important;
+    }
+    .content__form--btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content__form--btn input{
+        width: 145px;
+    }
+}
 @media (max-width: 319px) {
     .searchbar .searchbar-input {
         padding-left: 10px;
