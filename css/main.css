@@ -673,7 +673,7 @@ width: 27px;
 
 .page-title{
     font-size: 22px;
-    margin: 10px 0 40px 20px;
+    margin: 10px 0 40px 5px;
 }
 
 .content__form{
@@ -704,7 +704,7 @@ width: 27px;
 .content__form--btn input{
     margin-top: 20px;
     height: 40px;
-    width: 200px;
+    width: 210px;
     background-color: transparent;
     border: 1px solid rgba(0,0,0, .2);
 }
