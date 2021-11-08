@@ -648,3 +648,33 @@ width: 27px;
     position: static!important;
     z-index: 1!important;
 }
+
+/* Визитки*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.prestizh-block {
+    background-color: rgb(252, 252, 163);
+    padding: 20px 0;
+    margin: 20px 0 30px;
+}
+.title-section {
+    text-align: center;
+}
+.business-card-item {
+    padding-left: 30px;
+}
+.free-cards {
+    margin: 30px 0;
+}
+.pagination a{
+    color: #004a80;
+    padding: 0 5px;
+    text-decoration: none;
+}
+.page-item-arrow {
+    padding: 0 20px;
+}
