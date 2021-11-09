@@ -446,6 +446,16 @@
         width: 145px;
     }
 
+/*    FOOTER*/
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__content--item {
+        flex-direction: column;
+        text-align: center;
+        line-height: 40px;
+    }
+
 }
 /* -----Mobile----- */
 @media (max-width: 767px) {
