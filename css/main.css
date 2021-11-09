@@ -668,7 +668,7 @@ width: 27px;
 }
 .crumbs__home i{
     font-size: 25px;
-    color: rgba(2, 80, 198, 0.87);
+    color: rgba(2, 80, 198, 0.60);
 }
 
 .page-title{
@@ -755,4 +755,41 @@ width: 27px;
 }
 .page-item-arrow {
     padding: 0 20px;
+}
+
+/*FOOTER*/
+
+.footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__content--item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 668px;
+}
+
+.footer__content--list{
+    list-style: none;
+}
+.footer__content--list a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.footer__content--social{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.footer__content--social li {
+    list-style: none;
+}
+
+.footer__warn{
+    padding-top: 40px;
 }
