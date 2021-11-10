@@ -5,57 +5,13 @@
     .subscribe-block2 button {
         padding: 2px 7px;
     }
-
-    /*CONTENT*/
-    .content__form--input input{
-        width: 100%;
-    }
-    .content__form--input__long{
-        max-width: 95% !important;
-    }
-    .content__form--btn input{
-        width: 145px;
-    }
 }
 @media screen and (max-width: 1024px) {
     .subnav a{
         font-size: 16px;
     }
-    .content__form--input input{
-        width: 100%;
-    }
-    .content__form--input__long{
-        max-width: 100% !important;
-    }
-    .content__form--btn input{
-        width: 145px;
-    }
 }
 @media screen and (max-width: 991px) {
-    .content__form--input{
-        width: 375px;
-    }
-    .mt-20 {
-        margin-top: 20px;
-    }
-    .content__form--input input{
-        max-width: 100%;
-    }
-    .content__form--select{
-        width: 375px;
-    }
-    .content__form--input__long{
-        max-width: 100% !important;
-    }
-    .content__form--btn{
-        margin: 0 auto;
-    }
-    .content__form--btn input{
-        width: 145px;
-    }
-
-
-
     .mobile-banner2 {
         display: block;
     }
@@ -133,25 +89,6 @@
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-
-    .content__form--input{
-        width: 305px;
-    }
-    .mt-20 {
-        margin-top: 20px;
-    }
-    .content__form--input input{
-        max-width: 100%;
-    }
-    .content__form--select{
-        width: 305px;
-    }
-    .content__form--input__long{
-        max-width: 100% !important;
-    }
-    .content__form--btn input{
-        width: 145px;
-    }
 
     .social-links.tablet-show {
         display: block;
@@ -427,24 +364,6 @@
     }
 }
 @media screen and (max-width: 655px) {
-    .content__form--input{
-        width: 200px;
-    }
-    .mt-20 {
-        margin-top: 20px;
-    }
-    .content__form--input input{
-        max-width: 100%;
-    }
-    .content__form--select{
-        width: 200px;
-    }
-    .content__form--input__long{
-        max-width: 100% !important;
-    }
-    .content__form--btn input{
-        width: 145px;
-    }
 
 /*    FOOTER*/
     .footer__content {
@@ -454,8 +373,34 @@
         flex-direction: column;
         text-align: center;
         line-height: 40px;
+        padding: 0;
+    }
+    .footer__content--social {
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    .content__search{
+        display: none;
     }
 
+    .content__show{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    .content__show span {
+        margin-right: 15px;
+    }
+
+    .show-from {
+        display: block;
+    }
+    .w-100 {
+        display: none;
+    }
 }
 /* -----Mobile----- */
 @media (max-width: 767px) {
@@ -710,15 +655,6 @@
     }
 }
 @media (max-width: 520px) {
-    .content__show{
-        display: block;
-        font-size: 18px;
-        margin-bottom: 40px;
-        cursor: pointer;
-    }
-    .content__show span {
-        margin-right: 15px;
-    }
     .page-title{
         margin: 10px 0 40px 0;
         font-size: 18px;
@@ -736,36 +672,6 @@
         grid-template-columns: 1fr 0;
         grid-template-areas: "block block";
     }
-    .content__form{
-        display: none;
-    }
-    .show-from {
-        display: flex;
-    }
-    .content__form--input{
-        width: 220px;
-    }
-    .mt-20 {
-        margin-top: 20px;
-    }
-    .content__form--input input{
-        max-width: 100%;
-        font-size: 12px;
-    }
-    .content__form--select{
-        width: 220px;
-    }
-    .content__form--input__long{
-        max-width: 100% !important;
-    }
-    .content__form--btn{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .content__form--btn input{
-        width: 145px;
-    }
-
     .subnav .mddh li:not(:first-child){
         min-width: 135px;
     }
@@ -828,29 +734,6 @@ a.active + ul {
     .content__inner{
         grid-template-columns: 1fr 0;
         grid-template-areas: "block block";
-    }
-    .content__form--input{
-        width: 160px;
-    }
-    .mt-20 {
-        margin-top: 20px;
-    }
-    .content__form--input input{
-        max-width: 100%;
-        font-size: 12px;
-    }
-    .content__form--select{
-        width: 160px;
-    }
-    .content__form--input__long{
-        max-width: 100% !important;
-    }
-    .content__form--btn{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .content__form--btn input{
-        width: 145px;
     }
 }
 @media (max-width: 319px) {

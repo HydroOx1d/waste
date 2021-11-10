@@ -5409,68 +5409,74 @@
       <div class="content__block">
         <div class="content__show">
           <span>Поиск в разделе</span>
+          <img src="./img/menu.png" alt="">
         </div>
-        <form class="content__form">
-          <div class="content__form--input">
-            <input type="text" placeholder="Предприятие">
+        <div class="content__search">
+          <div class="row g-3">
+            <div class="col-6 col-sm">
+              <input type="text" class="form-control" placeholder="Предприятие" aria-label="City">
+            </div>
+            <div class="col-6 col-sm">
+              <select class="form-select">
+                <option value="" selected>Все страны</option>
+                <option value="">Украина</option>
+                <option value="">Россия</option>
+                <option value="">Австрия</option>
+                <option value="">Азербайджан</option>
+                <option value="">Армения</option>
+                <option value="">Бельгия</option>
+                <option value="">Болгария</option>
+                <option value="">Великобритания</option>
+                <option value="">Великобритания</option>
+                <option value="">Германия</option>
+                <option value="">Греция</option>
+                <option value="">Грузия</option>
+                <option value="">Дания</option>
+                <option value="">Израиль</option>
+                <option value="">Индия</option>
+                <option value="">Испания</option>
+                <option value="">Италия</option>
+                <option value="">Казахстан</option>
+                <option value="">Канада</option>
+                <option value="">Киргизия</option>
+                <option value="">Китай</option>
+                <option value="">Латвия</option>
+                <option value="">Литва</option>
+                <option value="">Молдова</option>
+                <option value="">Нидерланды</option>
+                <option value="">Норвегия</option>
+                <option value="">Польша</option>
+                <option value="">Румыния</option>
+                <option value="">Сербия</option>
+                <option value="">Словакия</option>
+                <option value="">Соединенные Штаты Америки</option>
+                <option value="">Таджикистан</option>
+                <option value="">Тайвань</option>
+                <option value="">Туркмения</option>
+                <option value="">Турция</option>
+                <option value="">Узбекистан</option>
+                <option value="">Узбекистан</option>
+                <option value="">Франция</option>
+                <option value="">Чехия</option>
+                <option value="">Швейцария</option>
+                <option value="">Швеция</option>
+                <option value="">Эстония</option>
+                <option value="">Япония</option>
+                <option value="">Другие страны</option>
+              </select>
+            </div>
+            <div class="col-6 col-sm">
+              <input type="text" class="form-control" placeholder="Населённый пункт" aria-label="Zip">
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-9">
+              <input type="text" class="form-control" placeholder="Искать в тексте" aria-label="State">
+            </div>
+            <div class="col-5 mx-auto col-sm">
+              <input class="form-control btn-icon" type="submit" value="Найти">
+            </div>
           </div>
-          <select class="content__form--select">
-            <option value="">Все страны</option>
-            <option value="">Украина</option>
-            <option value="">Россия</option>
-            <option value="">Австрия</option>
-            <option value="">Азербайджан</option>
-            <option value="">Армения</option>
-            <option value="">Бельгия</option>
-            <option value="">Болгария</option>
-            <option value="">Великобритания</option>
-            <option value="">Великобритания</option>
-            <option value="">Германия</option>
-            <option value="">Греция</option>
-            <option value="">Грузия</option>
-            <option value="">Дания</option>
-            <option value="">Израиль</option>
-            <option value="">Индия</option>
-            <option value="">Испания</option>
-            <option value="">Италия</option>
-            <option value="">Казахстан</option>
-            <option value="">Канада</option>
-            <option value="">Киргизия</option>
-            <option value="">Китай</option>
-            <option value="">Латвия</option>
-            <option value="">Литва</option>
-            <option value="">Молдова</option>
-            <option value="">Нидерланды</option>
-            <option value="">Норвегия</option>
-            <option value="">Польша</option>
-            <option value="">Румыния</option>
-            <option value="">Сербия</option>
-            <option value="">Словакия</option>
-            <option value="">Соединенные Штаты Америки</option>
-            <option value="">Таджикистан</option>
-            <option value="">Тайвань</option>
-            <option value="">Туркмения</option>
-            <option value="">Турция</option>
-            <option value="">Узбекистан</option>
-            <option value="">Узбекистан</option>
-            <option value="">Франция</option>
-            <option value="">Чехия</option>
-            <option value="">Швейцария</option>
-            <option value="">Швеция</option>
-            <option value="">Эстония</option>
-            <option value="">Япония</option>
-            <option value="">Другие страны</option>
-          </select>
-          <div class="content__form--input mt-20">
-            <input type="text" placeholder="Населённый пункт">
-          </div>
-          <div class="content__form--input">
-            <input class="content__form--input__long" type="text" placeholder="Искать в тексте">
-          </div>
-          <div class="content__form--btn">
-            <button type="submit">Найти<i class="fad fa-file-search"></i></button>
-          </div>
-        </form>
+        </div>
       <!-- Начало Блока визиток-->
       <section class="business-cards">
         <div class="cards-wrapper">
