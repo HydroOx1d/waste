@@ -454,8 +454,11 @@
         flex-direction: column;
         text-align: center;
         line-height: 40px;
+        padding: 0;
     }
-
+    .footer__content--social {
+        padding: 0;
+    }
 }
 /* -----Mobile----- */
 @media (max-width: 767px) {
@@ -711,7 +714,8 @@
 }
 @media (max-width: 520px) {
     .content__show{
-        display: block;
+        display: flex;
+        align-items: center;
         font-size: 18px;
         margin-bottom: 40px;
         cursor: pointer;
