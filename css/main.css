@@ -640,7 +640,7 @@ width: 27px;
 
 .content__ads {
     grid-area: ads;
-    background-color: gray;
+    position: relative;
 }
 .nofixed-subnav,
 .nofixed-header{
@@ -674,6 +674,8 @@ width: 27px;
 .page-title{
     font-size: 22px;
     margin: 10px 0 40px 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 .content__show {
@@ -683,7 +685,19 @@ width: 27px;
     display: none;
 }
 
+.content__ads--block{
+    background-color: #808080FF;
+    width: 100%;
+    height: 590px;
+}
+.content__ads--block:nth-child(2) {
+    margin-top: 40px;
+}
 
+.sticky-top {
+    top: 40px;
+    z-index: 1;
+}
 /* Визитки*/
 
 .busines-cards{
@@ -710,7 +724,7 @@ width: 27px;
     color: #004a80;
     padding: 0 7px;
     text-decoration: none;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .page-item-arrow {
     padding: 0 20px;
@@ -737,6 +751,9 @@ width: 27px;
 .footer__content--list a {
     text-decoration: none;
     color: #555555;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+
 }
 
 .footer__content--social{
@@ -751,8 +768,33 @@ width: 27px;
 
 .footer__warn{
     padding-top: 40px;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    max-width: 65rem;
+    margin: 0 auto;
 }
-
+.footer__warn span
+{
+    font-weight: 600!important;
+    font-family: "Montserrat", sans-serif!important;
+}
 .w-100 {
     margin: 0;
+}
+
+.btn-up {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 15%;
+    left: 30%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-up i {
+    color: #fff;
+    font-size: 22px;
 }

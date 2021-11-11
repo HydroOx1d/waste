@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="css/mmenu.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   </head>
   <body id="body">
+  <a name="top"></a>
     <header class="header nofixed-header">
       <div class="container">
         <div class="header-menu">
@@ -5383,14 +5387,14 @@
       <div class="container">
         <div class="crumbs__inner">
           <span class="crumbs__icon crumbs__home">
-            <a href="#"><i class="fa fa-home"></i></a>
+            <a href="index.html"><i class="fa fa-home"></i></a>
           </span>
           <span class="crumbs__icon"><i class="far fa-chevron-right"></i></span>
           <span class="crumbs__link"><a href="#services" data-menu-opener="href-or-subcategories">Объявления, Визитки</a></span>
           <span class="crumbs__icon"><i class="far fa-chevron-right"></i></span>
           <span class="crumbs__link"><a href="#services" data-menu-opener="href-or-subcategories">Услуги</a></span>
           <span class="crumbs__icon"><i class="far fa-chevron-right"></i></span>
-          <span class="crumbs__link"><a href="#services" data-menu-opener="href-or-subcategories">Паспортизация, Мониторинг, Консалтинг</a></span>
+          <span class="crumbs__link"><a href="#waste-inventory-panel" data-menu-opener="href-or-subcategories">Паспортизация, Мониторинг, Консалтинг</a></span>
           <span class="crumbs__icon"><i class="far fa-chevron-right"></i></span>
           <span class="crumbs__link"><a>Визитки</a></span>
         </div>
@@ -5473,7 +5477,7 @@
                   <input type="text" class="form-control" placeholder="Искать в тексте" aria-label="State" />
                 </div>
                 <div class="col-5 mx-auto col-sm">
-                  <input class="form-control btn-icon" type="submit" value="Найти" />
+                  <button class="btn btn-outline-secondary form-control d-md-flex align-items-md-center justify-content-md-center" type="button">Найти <img class="ps-2" src="./img/search.png" alt=""> </button>
                 </div>
               </div>
             </div>
@@ -5673,11 +5677,18 @@
             </section>
             <!-- Конец Блока визиток-->
           </div>
-          <div class="content__ads">Рекламная часть</div>
+          <div class="content__ads">
+            <div>
+              <div class="content__ads--block"></div>
+              <div class="content__ads--block"></div>
+            </div>
+            <a href="#top" class="btn-up">
+              <i class="fas fa-chevron-up"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
