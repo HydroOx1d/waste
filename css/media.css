@@ -299,6 +299,25 @@
 }
 
 @media screen and (max-width: 767px){
+    .content__form--input{
+        width: 250px;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .content__form--input input{
+        max-width: 100%;
+    }
+    .content__form--select{
+        width: 250px;
+    }
+    .content__form--input__long{
+        max-width: 100% !important;
+    }
+    .content__form--btn input{
+        width: 145px;
+    }
+
     .header {
         z-index: 2;
     }
@@ -344,8 +363,51 @@
         justify-content: center;
     }
 }
+@media screen and (max-width: 655px) {
+
+/*    FOOTER*/
+    .footer__content {
+        flex-direction: column;
+    }
+    .footer__content--item {
+        flex-direction: column;
+        text-align: center;
+        line-height: 40px;
+        padding: 0;
+    }
+    .footer__content--social {
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    .content__search{
+        display: none;
+    }
+
+    .content__show{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 40px;
+        cursor: pointer;
+    }
+    .content__show span {
+        margin-right: 15px;
+    }
+
+    .show-from {
+        display: block;
+    }
+    .w-100 {
+        display: none;
+    }
+}
 /* -----Mobile----- */
 @media (max-width: 767px) {
+    .content__mddh{
+        padding-left: 0px!important;
+        justify-content: space-between!important;
+    }
     .subnav .mddh .dropdown  li a{
         border: 0;
     }
@@ -593,6 +655,23 @@
     }
 }
 @media (max-width: 520px) {
+    .page-title{
+        margin: 10px 0 40px 0;
+        font-size: 18px;
+    }
+    .crumbs__inner{
+        margin: 20px 0;
+    }
+    .crumbs__link a{
+        font-size: 16px;
+    }
+    .content__ads{
+        display: none;
+    }
+    .content__inner{
+        grid-template-columns: 1fr 0;
+        grid-template-areas: "block block";
+    }
     .subnav .mddh li:not(:first-child){
         min-width: 135px;
     }
@@ -648,7 +727,15 @@ a.active + ul {
 /* body > div.active {
     display: block;
 } */
-
+@media screen and (max-width: 438px) {
+    .content__ads{
+        display: none;
+    }
+    .content__inner{
+        grid-template-columns: 1fr 0;
+        grid-template-areas: "block block";
+    }
+}
 @media (max-width: 319px) {
     .searchbar .searchbar-input {
         padding-left: 10px;
