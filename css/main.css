@@ -685,6 +685,7 @@ width: 27px;
 
 
 /* Визитки*/
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -707,8 +708,9 @@ width: 27px;
 }
 .pagination a{
     color: #004a80;
-    padding: 0 5px;
+    padding: 0 7px;
     text-decoration: none;
+    font-family: 'Montserrat';
 }
 .page-item-arrow {
     padding: 0 20px;
