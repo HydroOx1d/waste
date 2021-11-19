@@ -627,31 +627,13 @@ width: 27px;
     padding-left: 0px!important;
     justify-content: space-around!important;
 }
-.content__inner {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-gap: 20px;
-    grid-template-areas: "block ads";
-}
-
-.content__block {
-    grid-area: block;
-}
-
 .content__ads {
-    grid-area: ads;
     position: relative;
 }
 .nofixed-subnav,
 .nofixed-header{
     position: static!important;
     z-index: 1!important;
-}
-
-.crumbs__inner{
-    display: flex;
-    align-items: center;
-    flex-flow: row wrap;
 }
 
 .crumbs__home{
@@ -687,11 +669,9 @@ width: 27px;
 
 .content__ads--block{
     background-color: #808080FF;
-    width: 100%;
-    height: 590px;
-}
-.content__ads--block:nth-child(2) {
-    margin-top: 40px;
+    /*width: 100%;*/
+    max-width: 160px;
+    height: 600px;
 }
 
 .sticky-top {
@@ -786,9 +766,9 @@ width: 27px;
     width: 50px;
     height: 50px;
     background-color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    bottom: 15%;
-    left: 30%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -797,4 +777,13 @@ width: 27px;
 .btn-up i {
     color: #fff;
     font-size: 22px;
+}
+#mm-menu{
+    display: none;
+}
+
+.weight-bold{
+    font-weight: 700!important;
+    margin: 0;
+    padding: 0;
 }
