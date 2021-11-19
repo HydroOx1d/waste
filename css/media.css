@@ -15,6 +15,17 @@
     .mobile-banner2 {
         display: block;
     }
+    .content__inner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content__ads--block{
+        height: 50px;
+        max-width: 300px;
+        margin: 0px auto 20px;
+        width: 100%;
+    }
     .footer-nav ul, .footer-info .footer-nav ul li:last-child{
         margin-bottom: 0;
     }
@@ -388,7 +399,6 @@
         display: flex;
         align-items: center;
         font-size: 18px;
-        margin-bottom: 40px;
         cursor: pointer;
     }
     .content__show span {
@@ -401,25 +411,9 @@
     .w-100 {
         display: none;
     }
-    .content__ads--block{
-        height: 50px;
-        max-width: 300px;
-        margin: 0 auto;
-        width: 100%;
-    }
-    .content__ads--block:nth-child(2) {
-        display: none;
-    }
-
-    .content__inner{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-                "ads ads"
-                "block block";
-    }
-    .btn-up
+    .content__form
     {
-        display: none;
+        padding-top: 40px;
     }
 }
 /* -----Mobile----- */
@@ -671,6 +665,10 @@
         font-weight: 200;
     }
     body > div.active {
+        display: block;
+    }
+
+    #mm-menu{
         display: block;
     }
 }
