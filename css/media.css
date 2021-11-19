@@ -26,6 +26,9 @@
         margin: 0px auto 20px;
         width: 100%;
     }
+    .content__ads--block-2{
+        display: none;
+    }
     .footer-nav ul, .footer-info .footer-nav ul li:last-child{
         margin-bottom: 0;
     }
@@ -744,21 +747,21 @@ a.active + ul {
     }
 
     .mobile-banner2{
-        width: 320px; 
-        height: 50px; 
+        width: 320px;
+        height: 50px;
     }
 }
 
-@media(min-width: 945px) { 
+@media(min-width: 945px) {
     .mobile-banner2 {
-        width: 728px; height: 90px; 
+        width: 728px; height: 90px;
     }
 }
-    
-@media(min-width: 1185px) { 
-    .mobile-banner2 { 
-        width: 970px; height: 90px; 
-    } 
+
+@media(min-width: 1185px) {
+    .mobile-banner2 {
+        width: 970px; height: 90px;
+    }
 }
 
 @media screen and (max-width: 450px) {
