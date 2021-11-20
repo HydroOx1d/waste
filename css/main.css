@@ -673,6 +673,9 @@ width: 27px;
     max-width: 160px;
     height: 600px;
 }
+.sticky-md-top{
+    top: 30px;
+}
 .content__ads--block-2 {
     background-color: #808080FF;
     /*width: 100%;*/
