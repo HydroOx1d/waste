@@ -17,7 +17,7 @@ function showForm() {
 let button = $('.btn-up')
 $(window).on('scroll', () =>
 {
-  if($(this).scrollTop() >= 50)
+  if($(this).scrollTop() >= 100)
   {
     button.fadeIn()
   }
@@ -29,5 +29,5 @@ $(window).on('scroll', () =>
 button.on('click', (e) =>
 {
   e.preventDefault()
-  $('html').animate({scrollTop: 0}, 10)
+  $('html').animate({scrollTop: 0}, 200)
 })
