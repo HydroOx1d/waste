@@ -791,7 +791,8 @@ width: 27px;
     font-size: 22px;
 }
 #mm-menu{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .weight-bold{
