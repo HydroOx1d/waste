@@ -376,21 +376,8 @@
         display: flex;
         justify-content: center;
     }
-}
-@media screen and (max-width: 655px) {
-
-/*    FOOTER*/
-    .footer__content {
-        flex-direction: column;
-    }
     .footer__content--item {
-        flex-direction: column;
-        text-align: center;
-        line-height: 40px;
-        padding: 0;
-    }
-    .footer__content--social {
-        padding: 0;
+        line-height: 2.5;
     }
 }
 @media (max-width: 576px) {
@@ -417,6 +404,14 @@
     .content__form
     {
         padding-top: 40px;
+    }
+    .footer__content {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__content--item{
+        display: flex;
+        flex-direction: column;
     }
 }
 /* -----Mobile----- */
