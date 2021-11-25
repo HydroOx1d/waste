@@ -665,9 +665,12 @@
     body > div.active {
         display: block;
     }
-
+    #menu {
+        display: none;
+    }
     #mm-menu{
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 }
 @media (max-width: 520px) {
