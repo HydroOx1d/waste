@@ -792,9 +792,6 @@ width: 27px;
 }
 #mm-menu{
     display: none;
-    visibility: hidden;
-    opacity: 0;
-    transition: all -1ms linear;
 }
 
 .weight-bold{
