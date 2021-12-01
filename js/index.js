@@ -1,3 +1,4 @@
+//SHOW SEARCH FORM
 const form_show = document.querySelector(".content__show")
 const content_search = document.querySelector('.content__search')
 const content_show_img = document.querySelector('.content__show img')
@@ -13,21 +14,13 @@ function showForm() {
   }
 }
 
-// BTN_UP
-let button = $('.btn-up')
-$(window).on('scroll', () =>
-{
-  if($(this).scrollTop() >= 100)
-  {
-    button.fadeIn()
+//SCROLL TO TOP
+const to_top = document.querySelector('.btn-up')
+
+window.addEventListener("scroll", () => {
+  if(window.pageYOffset > 100) {
+    to_top.classList.add('active')
+  } else {
+    to_top.classList.remove('active')
   }
-  else
-  {
-    button.fadeOut()
-  }
-})
-button.on('click', (e) =>
-{
-  e.preventDefault()
-  $('html').animate({scrollTop: 0}, 200)
 })
