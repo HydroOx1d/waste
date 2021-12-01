@@ -646,11 +646,12 @@ width: 27px;
     font-size: 18px;
     font-weight: 500;
 }
-.crumbs__home i{
-    font-size: 25px;
-    color: rgba(2, 80, 198, 0.60);
+.crumbs__inner{
+    position: relative;
 }
-
+.crumbs__home img {
+    transform: translateY(-4px);
+}
 
 .page-title{
     font-size: 22px;
