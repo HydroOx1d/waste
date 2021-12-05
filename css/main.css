@@ -650,7 +650,9 @@ width: 27px;
     position: relative;
 }
 .crumbs__home img {
-    transform: translateY(-4px);
+    transform: translateY(-3.5px);
+    width: 22px;
+    height: 22px;
 }
 
 .page-title{
