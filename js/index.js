@@ -24,3 +24,14 @@ window.addEventListener("scroll", () => {
     to_top.classList.remove('active')
   }
 })
+
+// tooltip
+const tooltip_show = document.querySelector('.tooltip__show')
+const tooltip_desc = document.querySelector('.tooltip__desc')
+
+tooltip_show.addEventListener('mouseenter', () => {
+  tooltip_desc.classList.add('active--desc')
+})
+tooltip_show.addEventListener('mouseleave', () => {
+  tooltip_desc.classList.remove('active--desc')
+})

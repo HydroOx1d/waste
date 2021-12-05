@@ -810,3 +810,62 @@ width: 27px;
     margin: 0;
     padding: 0;
 }
+
+/*SORT*/
+.sort-active {
+    color: #000;
+    text-decoration: none;
+}
+.sort-active:hover {
+    color: #000;
+    cursor: default;
+}
+
+.sort__link {position: relative}
+
+.tooltip__show {
+    position: absolute;
+    top: -20px;
+    background-color: #008e3e;
+    color: #fff;
+    padding:2px 6px 0px 6px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 50%;
+    pointer-events: auto;
+}
+
+.tooltip__desc {
+    visibility: hidden;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0, .3);
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+
+    position: absolute;
+    z-index: 15;
+    top: -155px;
+    left: -25px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip__desc::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip__desc.active--desc {
+    visibility: visible;
+    opacity: 1;
+}
