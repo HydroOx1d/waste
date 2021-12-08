@@ -24,14 +24,20 @@ window.addEventListener("scroll", () => {
     to_top.classList.remove('active')
   }
 })
-
-// tooltip
-const tooltip_show = document.querySelector('.tooltip__show')
-const tooltip_desc = document.querySelector('.tooltip__desc')
-
-tooltip_show.addEventListener('mouseenter', () => {
-  tooltip_desc.classList.add('active--desc')
+// CUSTOM SELECT
+const mob_select_header = document.querySelectorAll('.sort__mob--header')
+const mob_select_item = document.querySelectorAll('.sort__mob--item')
+mob_select_header.forEach(item => {
+  item.addEventListener('click', () => {
+    item.parentElement.classList.toggle('is-active')
+  })
 })
-tooltip_show.addEventListener('mouseleave', () => {
-  tooltip_desc.classList.remove('active--desc')
+mob_select_item.forEach(item => {
+  item.addEventListener('click', () => {
+    let text = item.innerHTML
+    let close_select = item.closest('.sort__block--mob')
+    let current_text = item.closest('.sort__block--mob').querySelector('.sort__mob--current')
+    current_text.innerHTML = text
+    close_select.classList.remove('is-active')
+  })
 })
