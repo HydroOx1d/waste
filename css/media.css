@@ -5,6 +5,11 @@
     .subscribe-block2 button {
         padding: 2px 7px;
     }
+
+
+    .sticky-lg-top {
+        top: 0;
+    }
 }
 @media screen and (max-width: 1024px) {
     .subnav a{
