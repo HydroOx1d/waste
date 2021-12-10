@@ -485,7 +485,7 @@
         font-size: 11px;
     }
     .ps-xs-1 {
-        padding-left: .25rem!important;
+        padding:0 10px!important;
     }
 
     .btn-up {
