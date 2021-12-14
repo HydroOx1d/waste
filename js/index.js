@@ -19,8 +19,34 @@ const to_top = document.querySelector('.btn-up')
 
 window.addEventListener("scroll", () => {
   if(window.pageYOffset > 100) {
-    to_top.classList.add('active')
+    to_top.classList.add('active--btn')
   } else {
-    to_top.classList.remove('active')
+    to_top.classList.remove('active--btn')
   }
+})
+// CUSTOM SELECT
+const mob_select_header = document.querySelectorAll('.sort__mob--header')
+const mob_select_item = document.querySelectorAll('.sort__mob--item')
+mob_select_header.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.parentElement.classList.toggle('is-active')
+  })
+  item.addEventListener('touchstart', () => {
+    item.parentElement.classList.toggle('is-active')
+  })
+})
+mob_select_item.forEach(item => {
+  item.addEventListener('click', () => {
+    let text = item.innerHTML
+    let close_select = item.closest('.sort__block--mob')
+    let current_text = item.closest('.sort__block--mob').querySelector('.sort__mob--current')
+    current_text.innerHTML = text
+    close_select.classList.remove('is-active')
+  })
+})
+//OPEN TOOLTIP
+const tooltip_desc = document.querySelector('.tooltip__desc')
+const tooltip_show = document.querySelector('.tooltip__show')
+tooltip_show.addEventListener('click', () => {
+  tooltip_desc.classList.toggle('tool--active')
 })

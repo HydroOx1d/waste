@@ -5,6 +5,11 @@
     .subscribe-block2 button {
         padding: 2px 7px;
     }
+
+
+    .sticky-lg-top {
+        top: 0;
+    }
 }
 @media screen and (max-width: 1024px) {
     .subnav a{
@@ -348,9 +353,9 @@
     .tablet-show{
         display: none;
     }
-.tablet-banners{
-    display: none;
-}
+    .tablet-banners{
+        display: none;
+    }
     .sidebar-nav{
         width: 100%;
     }
@@ -379,10 +384,58 @@
     .footer__content--item {
         line-height: 2.5;
     }
+
+
+    .sort__block--mob {
+        display: block;
+    }
+    .content__sort {
+        justify-content: center;
+    }
+    .sort__block {
+        display: none!important;
+    }
+    .sort__title{
+        font-size: 14px;
+    }
+    .form-control::placeholder{
+        font-size: 14px;
+    }
+    .form-select {
+        font-size: 14px!important;
+        padding: .375rem 1.75rem .375rem 0.40rem!important;
+    }
+
+    .tooltip__desc p {
+        font-size: 12px;
+    }
+    .tooltip__top .tooltip__desc {
+        left: 50%;
+        transform: translate(-80%, 0);
+        bottom: 100%;
+        margin-bottom: 10px;
+
+    }
+
+    .tooltip__top .tooltip__desc:after {
+        left: 80%;
+        transform: translate(-50%, 0);
+        top: 100%;
+        border-width: 10px 10px 0 10px;
+        border-top-color: #ccc;
+    }
+
+    .form-select {
+        line-height: 1.7!important;
+    }
 }
 @media (max-width: 576px) {
     .content__search{
         display: none;
+    }
+
+    .form-select {
+        line-height: 1.9!important;
     }
 
     .content__show{
@@ -412,6 +465,40 @@
     .footer__content--item{
         display: flex;
         flex-direction: column;
+    }
+    .crumbs__home img {
+        transform: translateY(-2px);
+        width: 18px;
+        height: 18px;
+    }
+    .form-control::placeholder{
+        font-size: 13px;
+    }
+    .form-select {
+        font-size: 13px!important;
+        padding: .375rem 1.75rem .375rem 0.40rem!important;
+    }
+    .tooltip__desc {
+        width: 300px;
+    }
+    .tooltip__desc p {
+        font-size: 11px;
+    }
+    .ps-xs-1 {
+        padding:0 10px!important;
+    }
+
+    .btn-up {
+        padding: 10px 12px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        bottom: 30px;
+        left: 20px;
+        text-decoration: none;
+        z-index: 2;
+        transition: all 400ms;
+        opacity: 0;
+        pointer-events: none;
     }
 }
 /* -----Mobile----- */
@@ -672,6 +759,22 @@
         visibility: visible;
         opacity: 1;
     }
+
+    .tooltip__top .tooltip__desc {
+        left: 50%;
+        transform: translate(-40%, 0);
+        bottom: 100%;
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+
+    .tooltip__top .tooltip__desc:after {
+        left: 40%;
+        transform: translate(-50%, 0);
+        top: 100%;
+        border-width: 10px 10px 0 10px;
+        border-top-color: #ccc;
+    }
 }
 @media (max-width: 520px) {
     .page-title{
@@ -716,6 +819,44 @@
         margin-right: 3px;
     }
 }
+@media screen and (max-width: 350px) {
+    .mw-mob{
+        max-width: 280px;
+    }
+    .tooltip__top .tooltip__desc {
+        left: 50%;
+        transform: translate(-30%, 0);
+        bottom: 100%;
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+
+    .tooltip__top .tooltip__desc:after {
+        left: 30%;
+        transform: translate(-50%, 0);
+        top: 100%;
+        border-width: 10px 10px 0 10px;
+        border-top-color: #ccc;
+    }
+}
+
+@media screen and (max-width: 325px){
+    .tooltip__top .tooltip__desc {
+        left: 50%;
+        transform: translate(-35%, 0);
+        bottom: 100%;
+        margin-bottom: 10px;
+        line-height: 18px;
+    }
+
+    .tooltip__top .tooltip__desc:after {
+        left: 35%;
+        transform: translate(-50%, 0);
+        top: 100%;
+        border-width: 10px 10px 0 10px;
+        border-top-color: #ccc;
+    }
+}
 
 .change-position {
     bottom: 395px;
@@ -739,7 +880,7 @@ a.active + ul {
 /* body > div.active {
     display: block;
 } */
-@media (max-width: 319px) {
+@media (max-width: 320px) {
     .searchbar .searchbar-input {
         padding-left: 10px;
     }
