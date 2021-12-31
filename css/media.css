@@ -762,14 +762,14 @@
 
     .tooltip__top .tooltip__desc {
         left: 50%;
-        transform: translate(-40%, 0);
+        transform: translate(-35%, 0);
         bottom: 100%;
         margin-bottom: 10px;
         line-height: 18px;
     }
 
     .tooltip__top .tooltip__desc:after {
-        left: 40%;
+        left: 35%;
         transform: translate(-50%, 0);
         top: 100%;
         border-width: 10px 10px 0 10px;
@@ -825,14 +825,14 @@
     }
     .tooltip__top .tooltip__desc {
         left: 50%;
-        transform: translate(-30%, 0);
+        transform: translate(-35%, 0);
         bottom: 100%;
         margin-bottom: 10px;
         line-height: 18px;
     }
 
     .tooltip__top .tooltip__desc:after {
-        left: 30%;
+        left: 35%;
         transform: translate(-50%, 0);
         top: 100%;
         border-width: 10px 10px 0 10px;
@@ -843,14 +843,14 @@
 @media screen and (max-width: 325px){
     .tooltip__top .tooltip__desc {
         left: 50%;
-        transform: translate(-35%, 0);
+        transform: translate(-38%, 0);
         bottom: 100%;
         margin-bottom: 10px;
         line-height: 18px;
     }
 
     .tooltip__top .tooltip__desc:after {
-        left: 35%;
+        left: 38%;
         transform: translate(-50%, 0);
         top: 100%;
         border-width: 10px 10px 0 10px;

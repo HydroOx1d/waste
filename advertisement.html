@@ -5674,9 +5674,9 @@
                   <span class="tooltip__show--icon">?</span>
                   <div class="tooltip__desc">
                     <p>
-                      За исключением престиж-блока, при стандартной сортировке, заголовок объявления
+                      За исключением престиж-блока, при стандартной сортировке заголовок объявления
                       показывается в начале перечня не чаще 1 раза в месяц
-                      независмо от действий автора (редактирование объявления,
+                      независимо от действий автора (редактирование объявления,
                       удаление и добавление нового).
                     </p>
                   </div>
@@ -5692,24 +5692,14 @@
 
 
               <div class="sort__block--mob">
-                <div class="sort__mob--header">
-                  <div class="sort__mob--current">
-                    <a class="sort-active sort__link"
-                    >Стандартная
-                    </a>
-                  </div>
-                  <div class="sort__mob--icon">
-                    <img class="w-25" src="./img/down-arrow.svg" alt="down-arrow">
-                  </div>
-                </div>
-                <div class="sort__mob--body">
-                  <div class="sort__mob--item">
-                    <a class="sort-active sort__link"
-                    >Стандартная
-                    </a>
-                  </div>
-                  <div class="sort__mob--item">По дате размещения</div>
-                </div>
+                <select class="form-select">
+                  <option value="" selected >
+                    Стандартная
+                  </option>
+                  <option value="">
+                    По дате размещения
+                  </option>
+                </select>
               </div>
 
 
@@ -6097,6 +6087,22 @@
           return attr != "img/close.png" ? "img/close.png" : "img/icon3.png";
         });
       });
+
+      let tooltip_desc = $('.tooltip__desc');
+      let tooltip_show = $('.tooltip__show span');
+
+      $(tooltip_show)
+        .on('click', function() {
+          tooltip_desc.fadeToggle()
+      })
+
+      $(document).mouseup(function(e) {
+        if(!tooltip_show.is(e.target) && tooltip_show.has(e.target).length === 0 && !tooltip_desc.is(e.target) && tooltip_desc.has(e.target).length === 0) {
+          tooltip_desc.fadeOut()
+        }
+      })
+
+
     </script>
   </body>
 </html>

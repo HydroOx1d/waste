@@ -629,6 +629,7 @@ width: 27px;
 }
 .content__ads {
     position: relative;
+    z-index: 2;
 }
 .nofixed-subnav,
 .nofixed-header{
@@ -841,8 +842,8 @@ width: 27px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background-color: #008e3e;
     color: #fff;
@@ -861,11 +862,9 @@ width: 27px;
     z-index: 2;
     display: none;
     width: 350px;
+    cursor: default;
 }
 
-.tooltip__desc.tool--active {
-    display: block;
-}
 
 .tooltip__top .tooltip__desc {
     left: 50%;
