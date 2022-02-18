@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0c09d318-9067-4dbd-8421-8f7e09019462" name="waste" url="http://149.255.62.57">
+        <fileTransfer rootFolder="/waste.syntlex.kg" host="149.255.62.57" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="a3a5cd42-b46c-478e-91f0-c8de33295fb3" name="localwaste" url="localhost:63342/">
+        <fileTransfer mountedRoot="$PROJECT_DIR$" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
